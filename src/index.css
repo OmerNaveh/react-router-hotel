@@ -1,0 +1,96 @@
+.hotelCard{
+    background-color: rgb(53, 170, 154);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 2px 0px 10px 5px rgba(10, 65, 57, 0.83); 
+    box-shadow: 2px 0px 10px 5px rgba(10, 65, 57, 0.83);
+}
+.hotelImg{
+    height:100px;
+    margin-top: 10px;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 10%
+}
+h1{
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
+body{
+    background-color: lightgrey;
+}
+.hotelDets{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.green{
+    color: green;
+}
+.cardImg{
+    height: 400px;
+}
+.callBtn{
+    margin-bottom: 10px;
+}
+.hotelName{
+    color: black;
+    text-decoration: underline goldenrod;
+    text-align: center;
+}
+@media (min-width: 700pX){
+    .hotelCard{
+      margin: 40px;
+    }
+    .hotelImg{
+        height:150px;
+    }
+    .hotelName{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .hotelDets{
+        margin-top: 15%;
+        font-size: 2em;
+    }
+    .callBtn{
+        font-size: 1em;
+    }
+}
+@media (min-width: 1200px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+        margin: 0 10%
+    }
+    .hotelCard{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .hotelDets{
+        margin-top: 0; 
+        margin-bottom: 10px;
+        line-height: 0.2px;
+    }
+    .cardImg{
+        height: 300px;
+    }
+    .backLink{
+        position: fixed;
+        top: 5%;
+        left: 5%;
+    }
+}
